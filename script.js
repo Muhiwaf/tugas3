@@ -35,7 +35,7 @@ async function trackCovidData() {
         const population = countryData.population;
 
         const activeCasesPercentage = ((activeCases / population) * 100).toFixed(2);
-        const newCasesPercentage = (parseInt(newCases / population) * 100).toFixed(2);
+        const newCasesPercentage = ((newCases / population) * 100).toFixed(2);
         const recoveredCasesPercentage = ((recoveredCases / population) * 100).toFixed(2);
         const totalCasesPercentage = ((totalCases / population) * 100).toFixed(2);
         const totalDeathsPercentage = ((totalDeaths / population) * 100).toFixed(2);
